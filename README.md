@@ -3,7 +3,7 @@
 ## Configuration
 
 
-1.Add Dependencies
+### 1. Add Dependencies
 ```groovy
 dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -19,7 +19,7 @@ dependencies {
     implementation 'com.github.evntaly:evntaly-android:Tag'
 }
 ```
-1. Intialize the SDK 
+### 2. Intialize the SDK 
 ```java
 EvntalySDK.init("token", "developersecret");
 ```
@@ -28,8 +28,7 @@ to enable sdk debug logs
 EvntalySDK.init("token", "developersecret", true);
 ```
 
-
-1. Send an Event
+### 3. Send an Event
 ```java
 Evnt.Builder()
     .title("Test Event")
@@ -37,7 +36,7 @@ Evnt.Builder()
     .build();
 ```
 
-3. Identify User
+### 4. Identify User
 ```java
 EvntalySDK.identifyUser(
         EvntalyUser.Builder()
@@ -52,6 +51,3 @@ EvntalySDK.identifyUser(
             .build();
 )
 ```
-
-
-## Add
