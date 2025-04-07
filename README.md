@@ -1,6 +1,24 @@
 # Evntaly Android SDK
 
 ## Configuration
+
+
+1.Add Dependencies
+```groovy
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Add the following to build.gradle
+```groovy
+dependencies {
+    implementation 'com.github.evntaly:evntaly-android:Tag'
+}
+```
 1. Intialize the SDK 
 ```java
 EvntalySDK.init("token", "developersecret");
@@ -11,7 +29,7 @@ EvntalySDK.init("token", "developersecret", true);
 ```
 
 
-2. Send an Event
+1. Send an Event
 ```java
 Evnt.Builder()
     .title("Test Event")
@@ -35,9 +53,5 @@ EvntalySDK.identifyUser(
 )
 ```
 
-## Add OkHttp Library
-In your app's build.gradle.kts file, add the following dependency:
 
-```groovy
-    implementation "com.squareup.okhttp3:okhttp:4.12.0"
-```
+## Add
