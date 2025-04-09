@@ -21,7 +21,7 @@ public class EvntalySDK {
     private static String developerSecret;
     private static final String baseUrl = "https://app.evntaly.com/prod";
     private static final String eventEndpoint = "/api/v1/register/event";
-    private static final String userEndpoint = "/api/v1/identify/user";
+    private static final String userEndpoint = "/api/v1/register/user";
     private static OkHttpClient client;
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
